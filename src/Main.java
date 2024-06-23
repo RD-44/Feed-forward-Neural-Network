@@ -1,16 +1,14 @@
 public class Main {
     public static void main(String[] args) {
        //mm.displayVector(mm.mult(m, v));
-       neuralNet nn = new neuralNet(2, 3, 3, 2);
-
+       neuralNet nn = new neuralNet(2, 3, 2);
 
        // Training data - XOR
         double[][] inputs = {{0, 0}, {0, 1}, {1, 0}, {1, 1}};
         double[] outputs = {0, 1, 1, 0};
 
-        nn.train(inputs, outputs);
+        //nn.train(inputs, outputs);
         nn.dispWeights();
-        nn.dispLayers();
         nn.dispBiases();
     }
 
